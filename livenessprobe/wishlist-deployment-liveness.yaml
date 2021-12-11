@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: wishlist #1st container
-        image: karthequian/wishlist:1.0 #Dockerhub image
+        image: reddeppas/wishlist:1.0 #Dockerhub image
         ports:
         - containerPort: 8080 #Exposes the port 8080 of the container
           name: wishlist-port
@@ -31,7 +31,7 @@ spec:
           initialDelaySeconds: 5
           timeoutSeconds: 1
       - name: catalog #2nd container
-        image: karthequian/wishlist-catalog:1.0
+        image: reddeppas/wishlist-catalog:1.0
         ports:
         - containerPort: 8081
           name: catalog-port
@@ -45,7 +45,7 @@ spec:
           initialDelaySeconds: 5
           timeoutSeconds: 1
       - name: auth #3rd container
-        image: karthequian/wishlist-auth:1.0
+        image: reddeppas/wishlist-auth:1.0
         ports:
         - containerPort: 8082
           name: auth-port

@@ -5,15 +5,15 @@
 replicaCount: 3
 
 wishlistImage:
-  repository: karthequian/wishlist
+  repository: reddeppas/wishlist
   tag: "1.0"
   pullPolicy: IfNotPresent
 authImage:
-  repository: karthequian/wishlist-auth
+  repository: reddeppas/wishlist-auth
   tag: "1.0"
   pullPolicy: IfNotPresent
 catalogImage:
-  repository: karthequian/wishlist-catalog
+  repository: reddeppas/wishlist-catalog
   tag: "1.0"
   pullPolicy: IfNotPresent
 
